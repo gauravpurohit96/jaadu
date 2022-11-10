@@ -1,0 +1,16 @@
+#birdsVideo {
+    width: 800px;
+    height: 450px;
+}
+
+#birdsHeader {
+    color: purple;
+    font-family: cursive;
+}
+
+.button {
+    border-width: 0px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: teal
+}

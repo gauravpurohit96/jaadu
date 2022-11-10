@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <label for="inpt1">Enter the number</label>
+    <label for="input1"></label>
+    <input type="text" id="input1" name="input1">
+    <button id="button1" onclick="reverseNum()"> Check</button>
+    <p id="p1"></p>
+    <script>
+        function reverseNum()  {
+            let number = 0
+            number = parseInt(document.getElementById("input1").value)
+            let reverse = 0
+            let remainder = 0
+            while(number != 0) {
+                remainder = number % 10
+                reverse = (reverse*10) + remainder
+                number = parseInt(number / 10)
+            }
+            document.getElementById("p1").innerText = reverse
+        }
+        
+    </script>
+</body>
+</html>
